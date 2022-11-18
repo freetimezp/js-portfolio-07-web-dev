@@ -19,8 +19,6 @@ const Works = () => {
                 <br />
                 Voluptatum vero corrupti illo ex adipisci possimus rerum 
                 <br />
-                in molestias, repellat voluptatem!
-                <br />
                 in molestias, repellat voluptatem! in molestias!
             </span>
 
