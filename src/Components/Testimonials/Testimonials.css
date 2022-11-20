@@ -75,6 +75,7 @@
     border-radius: 49% 51% 100% 0% / 100% 48% 52% 0%;
     transform: rotate(140deg);
     transition: all 0.4s ease-in;
+    background: rgb(16, 203, 240);
 }
 
 .t-wrapper .swiper-pagination-bullet-active {
