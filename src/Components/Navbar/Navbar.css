@@ -34,12 +34,15 @@
     margin-right: 4rem;
 }
 
-.n-list>ul>li {
+.n-list ul * {
     transition: all 0.4s ease-in-out;
 }
 
-.n-list>ul>li:hover {
+.n-list ul * {
     cursor: pointer;
+}
+
+.n-list ul *:hover {
     color: var(--orange);
 }
 

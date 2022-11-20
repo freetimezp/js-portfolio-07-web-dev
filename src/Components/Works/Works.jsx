@@ -9,6 +9,8 @@ import Facebook from '../../img/Facebook.png';
 
 import { themeContext } from '../../Context';
 
+import { motion } from 'framer-motion';
+
 const Works = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
@@ -32,7 +34,13 @@ const Works = () => {
             </div>
 
             <div className="w-right">
-                <div className="w-mainCircle">
+                <motion.div 
+                    className="w-mainCircle"
+                    initial={{ rotate: 45 }}
+                    animate={{ rotate: 0 }}
+                    viewport={{ margin: '-40px' }}
+                    transition={{ duration: 3.5, type: 'spring', repeat: Infinity }}
+                >
                     <div className="w-secCircle">
                         <img src={Upwork} alt="circle" />
                     </div>
@@ -48,7 +56,7 @@ const Works = () => {
                     <div className="w-secCircle">
                         <img src={Facebook} alt="circle" />
                     </div>
-                </div>
+                </motion.div>
 
                 <div className="w-backCircle blueCircle"></div>
                 <div className="w-backCircle yellowCircle"></div>

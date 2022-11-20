@@ -86,15 +86,15 @@
 }
 
 .i-right>:nth-child(4) {
-    transform: scale(0.5);
+    transform: scale(0.6);
     top: -19%;
     left: -24%;
     border-radius: 50%;
     padding: 0;
-    animation: helloSmile 4s ease-in-out infinite;
+    /* animation: helloSmile 4s ease-in-out infinite; */
 }
 
-@keyframes helloSmile {
+/* @keyframes helloSmile {
     0% {
         transform: scale(0.5) rotate(20deg);
     }
@@ -104,7 +104,7 @@
     100% {
         transform: scale(0.5) rotate(20deg);
     }
-}
+} */
 
 .blur {
     background: #edd0ff; 

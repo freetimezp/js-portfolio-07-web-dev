@@ -10,12 +10,16 @@ import ServiceDoc from '../Services/ServiceDoc.pdf';
 
 import { themeContext } from '../../Context';
 
+import { motion } from 'framer-motion';
+
 const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
+  const transition = {duration: 2, type: 'spring'};
+
   return (
-    <div className='services'>
+    <div className='services' id='Services'>
       <div className="awesome">
         <span style={{color: darkMode ? 'white' : ''}}>My Awesome</span>
         <span>Services</span>
@@ -33,27 +37,42 @@ const Services = () => {
       </div>
 
       <div className="cards">
-        <div style={{ left: '14rem' }}>
+        <motion.div 
+          initial={{ x: '28rem' }}
+          animate={{ x: '8rem' }}
+          transition={transition}
+          style={{ left: '14rem' }}
+        >
           <Card 
             emoji={HeartEmoji} 
             heading={'Design'} 
             detail={'Figma, Sketch, Photoshop, Adobe, Photoshop XD'}
           />
-        </div>
-        <div style={{ left: '-4rem', top: '12rem' }}>
+        </motion.div>
+        <motion.div
+          initial={{ x: '-18rem', y: '1rem' }}
+          animate={{ x: '-4rem' }}
+          transition={transition}
+          style={{ left: '-4rem', top: '12rem' }}
+        >
           <Card 
             emoji={Glasses} 
             heading={'Developer'} 
             detail={'Html, Css, Javascript, React'}
           />
-        </div>
-        <div style={{ left: '12rem', top: '19rem' }}>
+        </motion.div>
+        <motion.div 
+          initial={{ x: '28rem', y: '0' }}
+          animate={{ x: '2rem' }}
+          transition={transition}
+          style={{ left: '12rem', top: '19rem' }}
+        >
           <Card 
             emoji={Humble} 
             heading={'UI/UX'} 
             detail={'Lorem ipsum dolor sit amet consectetur adipisicing elit'}
           />
-        </div>
+        </motion.div>
 
         <div className="blur s-blur2" style={{ background: "var(--purple)" }}></div>
       </div>
