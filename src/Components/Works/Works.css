@@ -91,5 +91,31 @@
     top: 8rem;
 }
 
-
+@media screen and (max-width: 480px) {
+    .works {
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        gap: 5rem;
+    }
+    .works .awesome {
+        margin-right: 0;
+    }
+    .w-right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.7);
+    }
+    .w-mainCircle {
+        position: static;
+    }
+    .w-backCircle {
+        left: 8rem !important;
+    }
+    .awesome span:nth-child(3) {
+        text-align: left;
+        font-size: 18px;
+    }
+}
 

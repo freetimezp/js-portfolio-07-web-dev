@@ -56,7 +56,33 @@
     top: 8rem;
 }
 
-
+@media screen and (max-width: 480px) {
+    .services {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+        margin-bottom: 18rem;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .cards div {
+        position: static;
+    }
+    .cards div:nth-child(1) {
+        transform: translateX(0) translateZ(0) !important;
+    }
+    .cards div:nth-child(2) {
+        transform: translate(0) !important;
+    }
+    .cards div:nth-child(3) {
+        transform: translate(0) !important;
+    }
+}
 
 
 

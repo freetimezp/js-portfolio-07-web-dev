@@ -83,7 +83,25 @@
     transform: translateY(-3px) rotate(140deg);
 }
 
-
+@media screen and (max-width: 480px) {
+    .t-wrapper {
+        padding: 0;
+    }
+    .testimonial img {
+        width: 70px;
+        height: 70px;
+    }
+    .testimonial {
+        padding: 0.5rem;
+    }
+    .testimonial span {
+        font-size: 15px;
+        text-align: center;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+}
 
 
 

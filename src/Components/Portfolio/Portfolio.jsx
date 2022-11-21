@@ -21,8 +21,15 @@ const Portfolio = () => {
       <span>Portfolio</span>
 
       <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
+        breakpoints={{
+          768: {
+            width: 768,
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        }}
+        spaceBetween={5}
+        slidesPerView={1}
         grabCursor={true}
         loop={true}
         className="portfolio-slider"

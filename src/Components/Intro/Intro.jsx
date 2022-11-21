@@ -61,6 +61,7 @@ const Intro = () => {
                     animate={{ x: '-4%' }}
                     transition={transition}
                     style={{ top: '-4%', left: '68%' }}
+                    className='floating-div'
                 >
                     <FloatingDiv image={Crown} txt1="Web" txt2="Developer" />
                 </motion.div>
@@ -69,6 +70,7 @@ const Intro = () => {
                     animate={{ x: '78px' }}
                     transition={transition}
                     style={{ top: '18rem', left: '0' }}
+                    className='floating-div'
                 >
                     <FloatingDiv image={Thumbup} txt1="Your" txt2="Best Design" />
                 </motion.div>
